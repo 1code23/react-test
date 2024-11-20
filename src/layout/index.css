@@ -1,0 +1,31 @@
+.disfr {
+  display: flex;
+}
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+.jc {
+  justify-content: center;
+}
+.ac {
+  align-items: center;
+}
+.afd {
+  align-items: flex-end;
+}
+.jsb {
+  justify-content: space-between;
+}
+.jfd {
+  justify-content: flex-end;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.flex1 {
+  flex: 1;
+}
+.flex1 {
+  flex: 2;
+}

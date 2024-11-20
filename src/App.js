@@ -1,24 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import './common/css/common.css'
+// import About from "./About/about";
+// import Home from "./Home/home";
+import Login from "./Login/login";
+// import Threepage from './view/three/Threepage';
+// import LayoutPage from './layout/index';
 
+// 引入路由
+// import {HashRouter, BrowserRouter,Link,Routes,Route } from 'react-router-dom';
+import {HashRouter,Link,Routes,Route } from 'react-router-dom';
+import RotersList from './router/index'
 function App() {
   return (
-    <div className="App">
+    // <BrowserRouter>
+    <HashRouter>
+      {/* 方法二 */}
+      <div className="App">
+        <header className="App-header">
+          {/* <Link to='/about'>跳转到关于页面</Link>
+          <Link to='/home'>跳转到Home页面</Link>
+          <Link to='/login'>跳转到Login页面</Link>
+          <Link to='/three'>跳转到ant Design页面</Link> */}
+          <RotersList></RotersList>
+          {/* <Link to='/login'>跳转到Login页面</Link> */}
+        {/* <LayoutPage></LayoutPage> */}
+        </header>
+      </div>
+
+      {/* 方法一 */}
+    {/* <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Link to='/about'>跳转到关于页面</Link>
+        <Link to='/home'>跳转到Home页面</Link>
+        <Link to='/login'>跳转到Login页面</Link>
+        <Link to='/three'>跳转到ant Design页面</Link>
+        <Routes>
+          <Route path='about' element={<About></About>}></Route>
+          <Route path='home' element={<Home></Home>}></Route>
+          <Route path='login' element={<Login></Login>}></Route>
+          <Route path='three' element={<Threepage></Threepage>}></Route>
+        </Routes>
       </header>
-    </div>
+    </div> */}
+     
+    </HashRouter>
+    // </BrowserRouter>
   );
 }
 

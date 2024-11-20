@@ -1,0 +1,9 @@
+.threeBox{
+  background: #eaeceb;
+  width: 80vw;
+  height: 200px;
+}
+.editBtn{
+  color: rgb(250, 250, 250);
+  background: rgb(133, 206, 97);
+}
