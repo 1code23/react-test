@@ -67,6 +67,7 @@ function LayoutPage() {
         <Link to='/login'>跳转到Login页面</Link>
         <Link to='/three'>跳转到ant Design页面</Link>
         <Link to='/parentChild'>跳转到父子通信页面</Link>
+        <Link to='/useEffect'>useEffect使用</Link>
       </div>
       <div> <Outlet />    {/* 子路由展示区域 */}</div>
      </div>

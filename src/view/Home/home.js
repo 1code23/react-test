@@ -9,7 +9,7 @@ import ThemeContext from '../../ThemeContext';
 function Home() {
   const initialState = {
    name:'张三',
-   age:'30',
+   age:'25',
    info:{address:'上海市',work:'前端开发'},
    list:[],
    num:20,
@@ -44,6 +44,7 @@ function Home() {
         欢迎学习React<code>src/App.js</code> 这里是主页
       </p>
       <div className='disfr'>
+        我是父组件中显示的年龄：{initialState.age}
       <OnePage name={name} age={age} info={state.info} editName={editNamefun}></OnePage>
       <TwoPage num={num} price={price} info={state.info} editNum={editnumfun}></TwoPage>
       </div>

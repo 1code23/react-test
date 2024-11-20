@@ -6,6 +6,7 @@ import Home from "../view/Home/home";
 import Login from "../Login/login";
 import Four from "../view/four/four";
 import ParentChild from "../view/parentChild/parentChild";
+import UseEffect from "../view/useEffect/useEffect";
 import Threepage from '../view/three/Threepage';
 
 function RotersList() {
@@ -14,6 +15,7 @@ function RotersList() {
       path: "/",
       element: <Layout />,
       children: [
+        { path: "useEffect", element: <UseEffect /> },
         { path: "parentChild", element: <ParentChild /> },
         { path: "four", element: <Four /> },
         { path: "three", element: <Threepage /> },

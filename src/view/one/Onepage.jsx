@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './Onepage.css'
 import PropTypes from "prop-types";
 import ThemeContext from '../../ThemeContext';
@@ -36,6 +36,7 @@ function Onepage(props) {
         <div>
           <div>接受父组件传过来数据为：名字：{name}</div>
           <div>接受父组件传过来数据为：年龄：{age}</div>
+          <div>接受父组件传过来修改后为：年龄：{localAge}</div>
           <div>接受父组件传过来数据为：对象：{info.address}</div>
 
           {/* 将输入框的数据传给父 */}
