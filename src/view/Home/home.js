@@ -51,6 +51,7 @@ function Home() {
     </div>
     </ThemeContext.Provider>
   )
+  // ThemeContext 的 Provider，将 value1、value2 和 change1 作为值提供给所有在这个 Provider 内部的组件，从而这些组件可以方便地访问和使用这些值。这种做法通常用于状态管理，使得多个组件之间可以共享和更新状态，而无需通过 props 一层层地传递。
 }
 
 export default Home
