@@ -14,8 +14,9 @@
 // 可以存储任何可变的值，适合用来引用 DOM 元素和存储任何不需要在 UI 变化中显示的状态。
 
 
-import React, { useState,useRef } from 'react';
+import React, { useState,useRef,useContext } from 'react';
 import ChildComponent from './ChildComponent';
+// import ThemeContext from '../../ThemeContext';
 import SiblingA from './siblingA';
 import SiblingB from './siblingB';
 const ParentComponent = () => {
@@ -24,11 +25,12 @@ const ParentComponent = () => {
 
   const [sharedData, setSharedData] = useState(''); //兄弟组件之间共享数据
 
-  // 回调函数，用于接收子组件传来的数据
+  // 回调函数，用于接收子组件传来的数据 并更新父组件的状态 也可以直接在组件上调用setChildData
   const handleChildData = (data) => {
     setChildData(data);
   };
 
+  // const { value1, value2 } = useContext(ThemeContext);// 接收ThemeContext.Provider传来的数据
   const siblingBRef = useRef();
 
   const handleButtonClick = () => {

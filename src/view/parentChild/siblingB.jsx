@@ -10,6 +10,9 @@ const SiblingB = forwardRef((props, ref) => {
     useImperativeHandle(ref, () => ({
         handleClick() {
           alert('兄弟 B 的按钮事件被触发!'); // 这里可以是其他事件处理逻辑
+        },
+        handleClick1() {
+          console.log('这里可以写多个事件');
         }
       }));
     return (

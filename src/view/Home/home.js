@@ -2,6 +2,7 @@ import { useState } from 'react'
 import logo from '../../logo.svg';
 import  OnePage  from "../one/Onepage.jsx";
 import TwoPage from '../two/Twopage'
+// import ParentChild from '../parentChild/parentChild'
 import { useImmer } from 'use-immer'
 import '../../common/css/common.css'
 import ThemeContext from '../../ThemeContext';
@@ -47,6 +48,7 @@ function Home() {
         我是父组件中显示的年龄：{initialState.age}
       <OnePage name={name} age={age} info={state.info} editName={editNamefun}></OnePage>
       <TwoPage num={num} price={price} info={state.info} editNum={editnumfun}></TwoPage>
+      {/* <ParentChild></ParentChild> */}
       </div>
       </div>
     </div>
