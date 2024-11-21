@@ -66,6 +66,7 @@ function LayoutPage() {
         <Link to='/home'>跳转到Home页面</Link>
         <Link to='/login'>跳转到Login页面</Link>
         <Link to='/three'>跳转到ant Design页面</Link>
+        <Link to='/redux'>跳转到Redux页面</Link>
       </div>
       <div> <Outlet />    {/* 子路由展示区域 */}</div>
      </div>

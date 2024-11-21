@@ -10,9 +10,13 @@ import Login from "./Login/login";
 // import {HashRouter, BrowserRouter,Link,Routes,Route } from 'react-router-dom';
 import {HashRouter,Link,Routes,Route } from 'react-router-dom';
 import RotersList from './router/index'
+import { Provider } from 'react-redux';
+import store from './store/store';
 function App() {
   return (
+    
     // <BrowserRouter>
+    <Provider store={store}>
     <HashRouter>
       {/* 方法二 */}
       <div className="App">
@@ -44,6 +48,7 @@ function App() {
     </div> */}
      
     </HashRouter>
+    </Provider>
     // </BrowserRouter>
   );
 }
