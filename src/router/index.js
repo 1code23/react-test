@@ -8,6 +8,7 @@ import Four from "../view/four/four";
 import ParentChild from "../view/parentChild/parentChild";
 import UseEffect from "../view/useEffect/useEffect";
 import Threepage from '../view/three/Threepage';
+import Redux from '../view/reduxPage/redux';
 
 function RotersList() {
   let element = useRoutes([
@@ -21,6 +22,7 @@ function RotersList() {
         { path: "three", element: <Threepage /> },
         { path: "about", element: <About /> },
         { path: "home", element: <Home /> },
+        { path: "redux", element: <Redux /> },
         { path: "/", element: <Home /> },
       ],
     },
